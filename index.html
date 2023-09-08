@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- tailwind and daisy Ui cdn link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="flex lg:flex-row flex-col gap-5 justify-around mx-8 my-5 items-center">
+        <div>
+            <img src="Logo.png" alt="">
+          </div>
+          <div>
+            <button onclick ='sortbyview()' id="sortByviewBtn" class="text-sm rounded-md font-bold bg-gray-500 px-5 py-3 text-white">Sort By view</button>
+          </div>
+          <div>
+            <button href="./accordion.html" class="px-5 py-2 font-bold bg-red-500 text-white rounded-md">Blog</button>
+          </div>
+      </nav>
+    </header>
+        <hr>
+    <main>
+        <!-- tabs -->
+        <div id="tab-container">
+
+        </div>
+        <!-- show data section -->
+        <div id="show-data-container">
+           
+        </div>
+        <!-- if data no found  -->
+        <div id="noData-container" class="container mt-5 hidden">
+         <div class="div flex">
+          <div class="noData mx-auto">
+            <h1 class="text-2xl font-bold">There is no content here</h1c>
+            <br>
+            <br>
+          <img src="Icon.png" alt="">
+          </div>
+         </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
